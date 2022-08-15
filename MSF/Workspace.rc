@@ -1,0 +1,6 @@
+workspace -a TCPWholeScan
+db_import :pwd/../TCPFull/*.xml
+db_import :pwd/../TCPTop/*.xml
+db_import :pwd/../TCPServices/*.xml
+db_import :pwd/../Vulns/TCP_Vulns_*.xml
+exit

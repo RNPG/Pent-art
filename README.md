@@ -30,7 +30,7 @@ In addition to just perform a port scan, this toos also scans the targets with N
 
 ### Requirements
 
-Inorder to run this tool without any problems, you must have two Github projects on the same directory as this tool's. To do so, you can mauanlly download the following Github packages on your system:
+Inorder to run this tool without any problems, you must have two Github projects in the same directory as this tool's. To do so, you can mauanlly download the following Github packages on your system:
 
 * https://github.com/CBHue/nMap_Merger
 * https://github.com/mrschyte/nmap-converter
@@ -43,7 +43,7 @@ chmod +x requirements.sh
 
 ### Usage
 
-Now that you have the requirements, you can run the scaript as follows:
+Now that you have the requirements, you can run the script as follows:
 ```
 chmod +x nmap_automator.sh
 ./nmap_automator.sh -L <Path to your targets file>
@@ -54,9 +54,9 @@ Tool's options are demonstrated in the following image
 
 ## Tool's Features
 
-There are multiple functions defined in the tool's bash script, which carry out different purposes. Here is a list of them that can be commented if there is no need for them. 
+There are multiple functions defined in the tool's bash script, which carry out different tasks. Here is a list of them that can be commented if there is no need for them. 
 
-* LiveHost --> it checks whether the target(s) is up
+* LiveHost --> it checks whether the target(s) is up **_[MANDATORY]_**
 * TCPTop --> Performs a TCP SYN top scan
 * TCPFull --> Perform a TCP SYN full scan [65535 ports]
 * SOfingerprint --> Performs services and OS fingerprinting
@@ -68,8 +68,46 @@ There are multiple functions defined in the tool's bash script, which carry out 
 
 ## Examples
 
+#### TCP scans [top & full] examples
+
+<img src="https://raw.githubusercontent.com/RNPG/Pent-art/main/TCPScan_output.PNG">
+
+#### TCP ports services & OS probing
+
+<img src="https://raw.githubusercontent.com/RNPG/Pent-art/main/SO_fingerprintoutput.PNG">
+
+#### TCP vuln assessment with Nmap vuln script
+
+<img src="https://raw.githubusercontent.com/RNPG/Pent-art/main/TCPVuln_output.PNG">
+
+#### UDP scans [top& full] examples
+
+<img src="">
+
+#### Metasploit workspace
+
+<img src="https://raw.githubusercontent.com/RNPG/Pent-art/main/MSF_Workspace_output.PNG">
+
+* the created workspace:
+
+<img src="https://raw.githubusercontent.com/RNPG/Pent-art/main/TCPWhole_workspace.PNG">
+
+#### CompSys files
+
+* Data of discovered ports and details about their services
+
+<img src="https://raw.githubusercontent.com/RNPG/Pent-art/main/CompSys_ServiceInfo.PNG">
+
+* Data of the performed TCP vuln assessment
+
+<img src="https://raw.githubusercontent.com/RNPG/Pent-art/main/CompSys_VulnScan.PNG">
+
+* Data of UDP port scan and their vuln assessment
+
+<img src="">
+
 
 ## To do
 
 1. We must add a closed port to the SOfingerprint phase for an accurate OS guessing by Nmap
-2. Due to the former XML results being stored on our systems for previous scans, the final CompSys files contain all the previous results, it's better to create these files for each targets which are currently being scanned, not the whole previous targets. 
+2. Due to the former XML results being stored on our systems from previous scans, the final CompSys files contain all the previous results, it's better to create these files for each targets which are currently being scanned, not the whole previous targets. 

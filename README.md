@@ -82,7 +82,7 @@ There are multiple functions defined in the tool's bash script, which carry out 
 
 #### UDP scans [top& full] examples
 
-<img src="">
+<img src="https://raw.githubusercontent.com/RNPG/Pent-art/main/UDPScan_output.png">
 
 #### Metasploit workspace
 
@@ -101,10 +101,6 @@ There are multiple functions defined in the tool's bash script, which carry out 
 * Data of the performed TCP vuln assessment
 
 <img src="https://raw.githubusercontent.com/RNPG/Pent-art/main/CompSys_VulnScan.PNG">
-
-* Data of UDP port scan and their vuln assessment
-
-<img src="">
 
 
 ## To do

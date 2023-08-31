@@ -22,7 +22,7 @@ When it comes to carry out an accurate host probing task, it's advised to divide
 
 Having said that, this tool follows the exact same steps. It'll first find out the live hosts of a given range, or if it's a single target, it'll make sure the host is up, and then does a TOP and FULL TCP scans on the targets. And since UDP scans are time-consuming, it'll perform UDP scans as its final steps. 
 
-In addition to just perform a port scan, this toos also scans the targets with Nmap's VULN script so that we will know what possible vulnerabilities exist for our targets. Also, to make it even more convenient for users, we have included two output styles for this tool which are XML files of Nmap scans that later will be imported in a metasploit's workspace, and some Excel files of the scan's results. 
+In addition to just perform a port scan, this tool also scans the targets with Nmap's VULN script so that we will know what possible vulnerabilities exist for our targets. Also, to make it even more convenient for users, we have included two output styles for this tool which are XML files of Nmap scans that later will be imported in a metasploit's workspace, and some Excel files of the scan's results. 
 
 **NOTE: for the sake of being undetected by FW/IDPS, we have used SYN scan for our TCP phases.**
 
